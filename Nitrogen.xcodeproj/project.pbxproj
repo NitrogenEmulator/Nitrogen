@@ -948,12 +948,12 @@
 				BFCFE12E17650D3F000A70CF /* DocWatchHelper */,
 				8B7F89C51794F26200F3EA58 /* Right Sidebar */,
 				BFCFE1191764FCDE000A70CF /* Categories */,
-				BFCFE0F91764FBD3000A70CF /* Supporting Files */,
 				8BEA099217876A490060B347 /* Open Zip Files */,
 				8B305F65178B48E000FD010A /* Side Drawer */,
 				8B4895AC178CC67900BA61C3 /* OLGhostAlertView */,
 				D31CC89F17927BCB0098FB9C /* Dropbox */,
 				D31CC8B617927E840098FB9C /* ZAActivityBar */,
+				BFCFE0F91764FBD3000A70CF /* Supporting Files */,
 			);
 			name = Main;
 			path = Nitrogen;
