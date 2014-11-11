@@ -25,7 +25,7 @@ If you're NOT jailbroken, please follow the instructions here: http://nitrogen.r
 
 #### Option 2: Compile and install Nitrogen from the Xcode IDE
 -->
-##### Do not redistribute self-compiled versions of Nitrogen on other sites. We will be adding an official method to download Nitrogen very soon. THIS IS A FAIR WARNING.
+##### Do not redistribute self-compiled versions of Nitrogen on other sites. We will be adding an official method to download Nitrogen very soon. Any unofficial copies of Nitrogen must change the name and icon. THIS IS A FAIR WARNING.
 #### Compile and install Nitrogen from the Xcode IDE (your only option for now)
 ##### IMPORTANT: Make sure your working directory is devoid of spaces. Otherwise, bad things will happen.
 
