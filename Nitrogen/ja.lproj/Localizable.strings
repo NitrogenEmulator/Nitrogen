@@ -1,5 +1,5 @@
 ROM_LIST = "ROMリスト";
-ABOUT_NITROGEN = "Nitrogenについて";
+ABOUT_NITROGEN = "iDSについて";
 SETTINGS = "設定";
 DONATE = "寄付";
 
@@ -13,7 +13,7 @@ DEVELOPER = "開発者";
 EXPERIMENTAL = "実験的";
 
 OVERLAY_PIXEL_GRID_DETAIL = "ピクセルグリッドはゲームブラーを低減します。その代わり、ピクセルグリッドは明るさを低減します。";
-ENABLE_DROPBOX_DETAIL = "Dropboxとの同期を有効にすると、あなたのDropboxアカウントに「Nitrogen」フォルダを作成され、セーブデータ（DSV）に保存されます。よって、セーブデータはすべてのデバイス（iPhone、iPad、iPod touch、Android、PCなど）で利用できるようになります。";
+ENABLE_DROPBOX_DETAIL = "Dropboxとの同期を有効にすると、あなたのDropboxアカウントに「iDS」フォルダを作成され、セーブデータ（DSV）に保存されます。よって、セーブデータはすべてのデバイス（iPhone、iPad、iPod touch、Android、PCなど）で利用できるようになります。";
 ARMLJIT_DETAIL = "GNU Lightning JITはエミュレーションが速くなります。脱獄(Jailbreak)をしていなければNitrogenがクラッシュします。";
 
 AUTO = "オート";
@@ -36,7 +36,7 @@ LINKED = "接続されてしました";
 UNLINKED = "切断されました！";
 UNLINKED_DETAIL = "Dropboxから切断されました。セーブデータは同期されません。";
 SUCCESS = "成功！";
-SUCCESS_DETAIL = "Dropbox接続されてしました！今から、Dropbox上の「Nitrogen」フォルダにあなたのセーブデータ（DSV）を同期します。";
+SUCCESS_DETAIL = "Dropbox接続されてしました！今から、Dropbox上の「iDS Sync」フォルダにあなたのセーブデータ（DSV）を同期します。";
 DROPBOX_CFG_ERROR = "Dropbox接続エラー";
 
 SHOW_FPS = "FPSを表示";

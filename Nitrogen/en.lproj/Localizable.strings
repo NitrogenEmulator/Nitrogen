@@ -1,5 +1,5 @@
 ROM_LIST = "ROM List";
-ABOUT_NITROGEN = "About Nitrogen";
+ABOUT_NITROGEN = "About iDS";
 SETTINGS = "Settings";
 DONATE = "Donate";
 
@@ -13,8 +13,8 @@ DEVELOPER = "Developer";
 EXPERIMENTAL = "Experimental";
 
 OVERLAY_PIXEL_GRID_DETAIL = "The pixel grid makes games appear less blurry, but at the same time, reduces brightness.";
-ENABLE_DROPBOX_DETAIL = "Enabling Dropbox will add an \"Nitrogen\" folder to your Dropbox account. Your game saves will be synced back to that folder so it will carry across devices (iPhone, iPad, iPod touch, Android, PC, etc).";
-ARMLJIT_DETAIL = "GNU Lighting JIT makes games run faster. You must be jailbroken or Nitrogen will crash.";
+ENABLE_DROPBOX_DETAIL = "Enabling Dropbox will add an \"iDS\" folder to your Dropbox account. Your game saves will be synced back to that folder so it will carry across devices (iPhone, iPad, iPod touch, Android, PC, etc).";
+ARMLJIT_DETAIL = "GNU Lighting JIT makes games run faster. You must be jailbroken or iDS will crash.";
 
 AUTO = "Auto";
 DPAD = "D-Pad";
@@ -36,7 +36,7 @@ LINKED = "Linked";
 UNLINKED = "Unlinked!";
 UNLINKED_DETAIL = "Dropbox has been unlinked. Your save files will no longer be synced.";
 SUCCESS = "Success";
-SUCCESS_DETAIL = "Dropbox was linked successfully! Nitrogen will now start syncing your saves to a Dropbox folder called 'Nitrogen' located in the root directory of your Dropbox folder.";
+SUCCESS_DETAIL = "Dropbox was linked successfully! iDS will now start syncing your saves to a Dropbox folder called 'iDS Sync.'";
 DROPBOX_CFG_ERROR = "Error Configuring Dropbox";
 
 SHOW_FPS = "Show FPS";
