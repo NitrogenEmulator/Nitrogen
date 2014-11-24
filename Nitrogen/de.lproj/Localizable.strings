@@ -1,5 +1,5 @@
 ROM_LIST = "ROM-Liste";
-ABOUT_NITROGEN = "Über Nitrogen";
+ABOUT_NITROGEN = "Über iDS";
 SETTINGS = "Einstellungen";
 DONATE = "Spenden";
 
@@ -13,8 +13,8 @@ DEVELOPER = "Entwickler";
 EXPERIMENTAL = "Experimentell";
 
 OVERLAY_PIXEL_GRID_DETAIL = "Das Pixel-Raster erscheint weniger unscharf, reduziert jedoch auch die Helligkeit.";
-ENABLE_DROPBOX_DETAIL = "Das Aktivieren von Dropbox fügt einen \"Nitrogen\"-Ordner deiner Dropbox hinzu. Deine Spielstände werden in die Dropbox synchronisiert und auf deine Geräte verteilt (iPhone, iPad, iPod Touch, Androidm PC, etc).";
-ARMLJIT_DETAIL = "GNU Lightning JIT macht das Ausführen von Spielen schneller. Dein iPhone muss gejailbreaked sein oder Nitrogen wird abstürzen.";
+ENABLE_DROPBOX_DETAIL = "Das Aktivieren von Dropbox fügt einen \"iDS\"-Ordner deiner Dropbox hinzu. Deine Spielstände werden in die Dropbox synchronisiert und auf deine Geräte verteilt (iPhone, iPad, iPod Touch, Androidm PC, etc).";
+ARMLJIT_DETAIL = "GNU Lightning JIT macht das Ausführen von Spielen schneller. Dein iPhone muss gejailbreaked sein oder iDS wird abstürzen.";
 
 AUTO = "Auto";
 DPAD = "D-Pad";
@@ -36,7 +36,7 @@ LINKED = "Verbunden";
 UNLINKED = "Nicht mehr verbunden!";
 UNLINKED_DETAIL = "Dropbox ist nicht mehr verbunden. Deine Spiele werden nicht mehr synchronisiert.";
 SUCCESS = "Verbindung erfolgreich";
-SUCCESS_DETAIL = "Dropbox wurde erfolgreich verbunden. Nitrogen wird nun automatisch deine Spielstände in einen Dropbox-Ordner namens 'Nitrogen' synchronisieren.";
+SUCCESS_DETAIL = "Dropbox wurde erfolgreich verbunden. iDS wird nun automatisch deine Spielstände in einen Dropbox-Ordner namens 'iDS Sync' synchronisieren.";
 DROPBOX_CFG_ERROR = "Fehler beim Konfigurieren von Dropbox";
 
 SHOW_FPS = "FPS anzeigen";
