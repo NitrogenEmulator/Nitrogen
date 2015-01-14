@@ -35,6 +35,9 @@
 @property (weak, nonatomic) IBOutlet UISwitch *showFPSSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *showPixelGridSwitch;
 
+@property (weak, nonatomic) IBOutlet UILabel *synchSoundLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *synchSoundSwitch;
+
 @property (weak, nonatomic) IBOutlet UISwitch *enableJITSwitch;
 
 @property (weak, nonatomic) IBOutlet UILabel *vibrateLabel;
@@ -166,6 +169,8 @@
         [defaults setInteger:frameSkip forKey:@"frameSkip"];
     } else if (sender == self.disableSoundSwitch) {
         [defaults setBool:self.disableSoundSwitch.on forKey:@"disableSound"];
+    } else if (sender == self.synchSoundSwitch) {
+        [defaults setBool:self.synchSoundSwitch.on forKey:@"synchSound"];
     } else if (sender == self.showPixelGridSwitch) {
         [defaults setBool:self.showPixelGridSwitch.on forKey:@"showPixelGrid"];
     } else if (sender == self.controlPadStyleControl) {
@@ -214,6 +219,7 @@
     
     self.showFPSSwitch.on = [defaults boolForKey:@"showFPS"];
     self.showPixelGridSwitch.on = [defaults boolForKey:@"showPixelGrid"];
+    self.synchSoundSwitch.on = [defaults boolForKey:@"synchSound"];
     
     self.enableJITSwitch.on = [defaults boolForKey:@"enableLightningJIT"];
     self.vibrateSwitch.on = [defaults boolForKey:@"vibrate"];

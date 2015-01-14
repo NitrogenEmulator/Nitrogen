@@ -23,6 +23,7 @@
 #include "cheatSystem.h"
 #include "slot1.h"
 #include "version.h"
+#include "metaspu.h"
 
 #define LOGI(...) printf(__VA_ARGS__);printf("\n")
 
@@ -292,6 +293,15 @@ void EMU_change3D(int type)
 void EMU_changeSound(int type)
 {
 	SPU_ChangeSoundCore(type, DESMUME_SAMPLE_RATE*8/60);
+}
+
+void EMU_setSynchMode(bool enabled)
+{
+    if (enabled == true) {
+        SPU_SetSynchMode(ESynchMode_Synchronous,ESynchMethod_N);
+    } else {
+        SPU_SetSynchMode(ESynchMode_DualSynchAsynch,ESynchMethod_N);
+    }
 }
 
 void EMU_enableSound(bool enabled)
