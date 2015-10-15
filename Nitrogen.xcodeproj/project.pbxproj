@@ -223,119 +223,50 @@
 		D3F79E6D1BCF6D5000F898DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F79E6B1BCF6D5000F898DC /* Main.storyboard */; };
 		D3F79E6F1BCF6D5000F898DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F79E6E1BCF6D5000F898DC /* Assets.xcassets */; };
 		D3F79E741BCF6E7100F898DC /* emu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098117872CF40060B347 /* emu.cpp */; };
-		D3F79E751BCF6E7100F898DC /* emu.h in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098217872CF40060B347 /* emu.h */; };
-		D3F79E761BCF6E7100F898DC /* nullJit.h in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098517872CF40060B347 /* nullJit.h */; };
-		D3F79E771BCF6E7100F898DC /* sndcoreaudio.h in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098617872CF40060B347 /* sndcoreaudio.h */; };
 		D3F79E781BCF6E7100F898DC /* sndcoreaudio.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098717872CF40060B347 /* sndcoreaudio.mm */; };
 		D3F79E791BCF6E7100F898DC /* throttle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098817872CF40060B347 /* throttle.cpp */; };
-		D3F79E7A1BCF6E7100F898DC /* throttle.h in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098917872CF40060B347 /* throttle.h */; };
-		D3F79E7B1BCF6E7100F898DC /* NitrogenGame.h in Sources */ = {isa = PBXBuildFile; fileRef = 28387161179561F5009B8E84 /* NitrogenGame.h */; };
 		D3F79E7C1BCF6E7100F898DC /* NitrogenGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 28387162179561F5009B8E84 /* NitrogenGame.m */; };
-		D3F79E7D1BCF6E7100F898DC /* asm-32.h in Sources */ = {isa = PBXBuildFile; fileRef = AE20890E1916401400E2CB33 /* asm-32.h */; };
-		D3F79E7E1BCF6E7100F898DC /* asm-64.h in Sources */ = {isa = PBXBuildFile; fileRef = AE20890F1916401400E2CB33 /* asm-64.h */; };
-		D3F79E7F1BCF6E7100F898DC /* asm.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089101916401400E2CB33 /* asm.h */; };
-		D3F79E801BCF6E7100F898DC /* core-32.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089111916401400E2CB33 /* core-32.h */; };
-		D3F79E811BCF6E7100F898DC /* core-64.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089121916401400E2CB33 /* core-64.h */; };
-		D3F79E821BCF6E7100F898DC /* core.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089131916401400E2CB33 /* core.h */; };
-		D3F79E831BCF6E7100F898DC /* fp-32.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089141916401400E2CB33 /* fp-32.h */; };
-		D3F79E841BCF6E7100F898DC /* fp-64.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089151916401400E2CB33 /* fp-64.h */; };
-		D3F79E851BCF6E7100F898DC /* fp-sse.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089161916401400E2CB33 /* fp-sse.h */; };
-		D3F79E861BCF6E7100F898DC /* fp-x87.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089171916401400E2CB33 /* fp-x87.h */; };
-		D3F79E871BCF6E7100F898DC /* fp.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089181916401400E2CB33 /* fp.h */; };
-		D3F79E881BCF6E7100F898DC /* funcs.h in Sources */ = {isa = PBXBuildFile; fileRef = AE2089191916401400E2CB33 /* funcs.h */; };
-		D3F79E891BCF6E7100F898DC /* asm.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC47A177FF29000D3CF93 /* asm.h */; };
-		D3F79E8A1BCF6E7100F898DC /* core.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC47B177FF29000D3CF93 /* core.h */; };
-		D3F79E8B1BCF6E7100F898DC /* fp-swf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC47C177FF29000D3CF93 /* fp-swf.h */; };
-		D3F79E8C1BCF6E7100F898DC /* fp-vfp.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC47D177FF29000D3CF93 /* fp-vfp.h */; };
-		D3F79E8D1BCF6E7100F898DC /* fp.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC47E177FF29000D3CF93 /* fp.h */; };
-		D3F79E8E1BCF6E7100F898DC /* funcs.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC47F177FF29000D3CF93 /* funcs.h */; };
-		D3F79E8F1BCF6E7100F898DC /* asm-common.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC482177FF29000D3CF93 /* asm-common.h */; };
-		D3F79E901BCF6E7100F898DC /* config_lightning.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC483177FF29000D3CF93 /* config_lightning.h */; };
-		D3F79E911BCF6E7100F898DC /* core-common.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC484177FF29000D3CF93 /* core-common.h */; };
-		D3F79E921BCF6E7100F898DC /* fp-common.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC485177FF29000D3CF93 /* fp-common.h */; };
-		D3F79E931BCF6E7100F898DC /* funcs-common.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC486177FF29000D3CF93 /* funcs-common.h */; };
-		D3F79E941BCF6E7100F898DC /* lightning.h in Sources */ = {isa = PBXBuildFile; fileRef = AE20891A1916496300E2CB33 /* lightning.h */; };
 		D3F79E951BCF6E7100F898DC /* ArmLJit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC475177FF06600D3CF93 /* ArmLJit.cpp */; };
-		D3F79E961BCF6E7100F898DC /* ArmLJit.h in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC476177FF06600D3CF93 /* ArmLJit.h */; };
 		D3F79E971BCF6E7100F898DC /* addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13017650FB0000A70CF /* addons.cpp */; };
-		D3F79E981BCF6E7100F898DC /* addons.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13117650FB0000A70CF /* addons.h */; };
 		D3F79E991BCF6E7100F898DC /* arm_instructions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13217650FB0000A70CF /* arm_instructions.cpp */; };
-		D3F79E9A1BCF6E7100F898DC /* arm_instructions.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13317650FB0000A70CF /* arm_instructions.h */; };
 		D3F79E9B1BCF6E7100F898DC /* ArmAnalyze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13417650FB0000A70CF /* ArmAnalyze.cpp */; };
-		D3F79E9C1BCF6E7100F898DC /* ArmAnalyze.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13517650FB0000A70CF /* ArmAnalyze.h */; };
 		D3F79E9D1BCF6E7100F898DC /* ArmCJit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13617650FB0000A70CF /* ArmCJit.cpp */; };
-		D3F79E9E1BCF6E7100F898DC /* ArmCJit.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13717650FB0000A70CF /* ArmCJit.h */; };
 		D3F79E9F1BCF6E7100F898DC /* armcpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13817650FB0000A70CF /* armcpu.cpp */; };
-		D3F79EA01BCF6E7100F898DC /* armcpu.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13917650FB0000A70CF /* armcpu.h */; };
 		D3F79EA11BCF6E7100F898DC /* ArmThreadedInterpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13A17650FB0000A70CF /* ArmThreadedInterpreter.cpp */; };
-		D3F79EA21BCF6E7100F898DC /* ArmThreadedInterpreter.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13B17650FB0000A70CF /* ArmThreadedInterpreter.h */; };
 		D3F79EA31BCF6E7100F898DC /* bios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13C17650FB0000A70CF /* bios.cpp */; };
-		D3F79EA41BCF6E7100F898DC /* bios.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13D17650FB0000A70CF /* bios.h */; };
 		D3F79EA51BCF6E7100F898DC /* cheatSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13E17650FB0000A70CF /* cheatSystem.cpp */; };
-		D3F79EA61BCF6E7100F898DC /* cheatSystem.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13F17650FB0000A70CF /* cheatSystem.h */; };
 		D3F79EA71BCF6E7100F898DC /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14017650FB0000A70CF /* common.cpp */; };
-		D3F79EA81BCF6E7100F898DC /* common.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14117650FB0000A70CF /* common.h */; };
 		D3F79EA91BCF6E7100F898DC /* cp15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14217650FB0000A70CF /* cp15.cpp */; };
-		D3F79EAA1BCF6E7100F898DC /* cp15.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14317650FB0000A70CF /* cp15.h */; };
 		D3F79EAB1BCF6E7100F898DC /* CpuBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14417650FB0000A70CF /* CpuBase.cpp */; };
-		D3F79EAC1BCF6E7100F898DC /* CpuBase.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14517650FB0000A70CF /* CpuBase.h */; };
 		D3F79EAD1BCF6E7100F898DC /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14617650FB0000A70CF /* debug.cpp */; };
-		D3F79EAE1BCF6E7100F898DC /* debug.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14717650FB0000A70CF /* debug.h */; };
 		D3F79EAF1BCF6E7100F898DC /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14817650FB0000A70CF /* Disassembler.cpp */; };
-		D3F79EB01BCF6E7100F898DC /* Disassembler.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14917650FB0000A70CF /* Disassembler.h */; };
 		D3F79EB11BCF6E7100F898DC /* driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14A17650FB0000A70CF /* driver.cpp */; };
-		D3F79EB21BCF6E7100F898DC /* driver.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14B17650FB0000A70CF /* driver.h */; };
 		D3F79EB31BCF6E7100F898DC /* emufile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14C17650FB0000A70CF /* emufile.cpp */; };
-		D3F79EB41BCF6E7100F898DC /* emufile.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14D17650FB0000A70CF /* emufile.h */; };
 		D3F79EB51BCF6E7100F898DC /* FIFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14E17650FB0000A70CF /* FIFO.cpp */; };
-		D3F79EB61BCF6E7100F898DC /* FIFO.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE14F17650FB0000A70CF /* FIFO.h */; };
 		D3F79EB71BCF6E7100F898DC /* firmware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15017650FB0000A70CF /* firmware.cpp */; };
-		D3F79EB81BCF6E7100F898DC /* firmware.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15117650FB0000A70CF /* firmware.h */; };
 		D3F79EB91BCF6E7100F898DC /* fs-linux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15217650FB0000A70CF /* fs-linux.cpp */; };
-		D3F79EBA1BCF6E7100F898DC /* fs.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15317650FB0000A70CF /* fs.h */; };
 		D3F79EBB1BCF6E7100F898DC /* gfx3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15417650FB0000A70CF /* gfx3d.cpp */; };
-		D3F79EBC1BCF6E7100F898DC /* gfx3d.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15517650FB0000A70CF /* gfx3d.h */; };
 		D3F79EBD1BCF6E7100F898DC /* GPU_osd_stub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15617650FB0000A70CF /* GPU_osd_stub.cpp */; };
-		D3F79EBE1BCF6E7100F898DC /* GPU_osd.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15717650FB0000A70CF /* GPU_osd.h */; };
 		D3F79EBF1BCF6E7100F898DC /* GPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15817650FB0000A70CF /* GPU.cpp */; };
-		D3F79EC01BCF6E7100F898DC /* GPU.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15917650FB0000A70CF /* GPU.h */; };
 		D3F79EC11BCF6E7100F898DC /* JitCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15A17650FB0000A70CF /* JitCommon.cpp */; };
-		D3F79EC21BCF6E7100F898DC /* JitCommon.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15B17650FB0000A70CF /* JitCommon.h */; };
 		D3F79EC31BCF6E7100F898DC /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15C17650FB0000A70CF /* matrix.cpp */; };
-		D3F79EC41BCF6E7100F898DC /* matrix.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15D17650FB0000A70CF /* matrix.h */; };
 		D3F79EC51BCF6E7100F898DC /* mc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15E17650FB0000A70CF /* mc.cpp */; };
 		D3F79EC61BCF6E7100F898DC /* MMU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE15F17650FB0000A70CF /* MMU.cpp */; };
-		D3F79EC71BCF6E7100F898DC /* MMU.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16017650FB0000A70CF /* MMU.h */; };
 		D3F79EC81BCF6E7100F898DC /* movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16117650FB0000A70CF /* movie.cpp */; };
-		D3F79EC91BCF6E7100F898DC /* movie.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16217650FB0000A70CF /* movie.h */; };
 		D3F79ECA1BCF6E7100F898DC /* NDSSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16317650FB0000A70CF /* NDSSystem.cpp */; };
-		D3F79ECB1BCF6E7100F898DC /* NDSSystem.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16417650FB0000A70CF /* NDSSystem.h */; };
 		D3F79ECC1BCF6E7100F898DC /* path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16517650FB0000A70CF /* path.cpp */; };
-		D3F79ECD1BCF6E7100F898DC /* path.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16617650FB0000A70CF /* path.h */; };
 		D3F79ECE1BCF6E7100F898DC /* rasterize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16717650FB0000A70CF /* rasterize.cpp */; };
-		D3F79ECF1BCF6E7100F898DC /* rasterize.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16817650FB0000A70CF /* rasterize.h */; };
 		D3F79ED01BCF6E7100F898DC /* readwrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16917650FB0000A70CF /* readwrite.cpp */; };
-		D3F79ED11BCF6E7100F898DC /* readwrite.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16A17650FB0000A70CF /* readwrite.h */; };
 		D3F79ED21BCF6E7100F898DC /* render3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16B17650FB0000A70CF /* render3D.cpp */; };
-		D3F79ED31BCF6E7100F898DC /* render3D.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16C17650FB0000A70CF /* render3D.h */; };
 		D3F79ED41BCF6E7100F898DC /* ROMReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16D17650FB0000A70CF /* ROMReader.cpp */; };
-		D3F79ED51BCF6E7100F898DC /* ROMReader.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16E17650FB0000A70CF /* ROMReader.h */; };
 		D3F79ED61BCF6E7100F898DC /* rtc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE16F17650FB0000A70CF /* rtc.cpp */; };
-		D3F79ED71BCF6E7100F898DC /* rtc.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17017650FB0000A70CF /* rtc.h */; };
 		D3F79ED81BCF6E7100F898DC /* saves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17117650FB0000A70CF /* saves.cpp */; };
-		D3F79ED91BCF6E7100F898DC /* saves.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17217650FB0000A70CF /* saves.h */; };
 		D3F79EDA1BCF6E7100F898DC /* slot1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17317650FB0000A70CF /* slot1.cpp */; };
-		D3F79EDB1BCF6E7100F898DC /* slot1.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17417650FB0000A70CF /* slot1.h */; };
 		D3F79EDC1BCF6E7100F898DC /* SPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17517650FB0000A70CF /* SPU.cpp */; };
-		D3F79EDD1BCF6E7100F898DC /* SPU.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17617650FB0000A70CF /* SPU.h */; };
 		D3F79EDE1BCF6E7100F898DC /* texcache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17717650FB0000A70CF /* texcache.cpp */; };
-		D3F79EDF1BCF6E7100F898DC /* texcache.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17817650FB0000A70CF /* texcache.h */; };
 		D3F79EE01BCF6E7100F898DC /* thumb_instructions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17917650FB0000A70CF /* thumb_instructions.cpp */; };
-		D3F79EE11BCF6E7100F898DC /* thumb_instructions.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17A17650FB0000A70CF /* thumb_instructions.h */; };
 		D3F79EE21BCF6E7100F898DC /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17B17650FB0000A70CF /* version.cpp */; };
-		D3F79EE31BCF6E7100F898DC /* version.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17C17650FB0000A70CF /* version.h */; };
 		D3F79EE41BCF6E7100F898DC /* wifi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17D17650FB0000A70CF /* wifi.cpp */; };
-		D3F79EE51BCF6E7100F898DC /* wifi.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE17E17650FB0000A70CF /* wifi.h */; };
 		D3F79EE61BCF6E7100F898DC /* slot1_none.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE230176634EE000A70CF /* slot1_none.cpp */; };
 		D3F79EE71BCF6E7100F898DC /* slot1_r4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE231176634EE000A70CF /* slot1_r4.cpp */; };
 		D3F79EE81BCF6E7100F898DC /* slot1_retail_nand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE232176634EE000A70CF /* slot1_retail_nand.cpp */; };
@@ -351,79 +282,44 @@
 		D3F79EF21BCF6E7100F898DC /* 2xsai.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1A817651005000A70CF /* 2xsai.cpp */; };
 		D3F79EF31BCF6E7100F898DC /* bilinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1A917651005000A70CF /* bilinear.cpp */; };
 		D3F79EF41BCF6E7100F898DC /* epx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AA17651005000A70CF /* epx.cpp */; };
-		D3F79EF51BCF6E7100F898DC /* filter.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AB17651005000A70CF /* filter.h */; };
 		D3F79EF61BCF6E7100F898DC /* hq2x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AC17651005000A70CF /* hq2x.cpp */; };
-		D3F79EF71BCF6E7100F898DC /* hq2x.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AD17651005000A70CF /* hq2x.h */; };
 		D3F79EF81BCF6E7100F898DC /* hq4x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AE17651005000A70CF /* hq4x.cpp */; };
-		D3F79EF91BCF6E7100F898DC /* hq4x.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1AF17651005000A70CF /* hq4x.h */; };
-		D3F79EFA1BCF6E7100F898DC /* interp.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1B017651005000A70CF /* interp.h */; };
 		D3F79EFB1BCF6E7100F898DC /* lq2x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1B117651005000A70CF /* lq2x.cpp */; };
-		D3F79EFC1BCF6E7100F898DC /* lq2x.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1B217651005000A70CF /* lq2x.h */; };
 		D3F79EFD1BCF6E7100F898DC /* scanline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1B317651005000A70CF /* scanline.cpp */; };
 		D3F79EFE1BCF6E7100F898DC /* metaspu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1BC17651037000A70CF /* metaspu.cpp */; };
-		D3F79EFF1BCF6E7100F898DC /* metaspu.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1BD17651038000A70CF /* metaspu.h */; };
 		D3F79F001BCF6E7100F898DC /* SndOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF9D514117865CD800B5864B /* SndOut.cpp */; };
-		D3F79F011BCF6E7100F898DC /* SndOut.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9D514217865CD800B5864B /* SndOut.h */; };
 		D3F79F021BCF6E7100F898DC /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C017651076000A70CF /* ConvertUTF.c */; };
-		D3F79F031BCF6E7100F898DC /* ConvertUTF.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C117651076000A70CF /* ConvertUTF.h */; };
 		D3F79F041BCF6E7100F898DC /* datetime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C217651076000A70CF /* datetime.cpp */; };
-		D3F79F051BCF6E7100F898DC /* datetime.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C317651076000A70CF /* datetime.h */; };
 		D3F79F061BCF6E7100F898DC /* dlditool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C417651076000A70CF /* dlditool.cpp */; };
 		D3F79F071BCF6E7100F898DC /* emufat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C517651076000A70CF /* emufat.cpp */; };
-		D3F79F081BCF6E7100F898DC /* emufat.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C617651076000A70CF /* emufat.h */; };
 		D3F79F091BCF6E7100F898DC /* FileMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C717651076000A70CF /* FileMap.cpp */; };
-		D3F79F0A1BCF6E7100F898DC /* FileMap.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C817651076000A70CF /* FileMap.h */; };
 		D3F79F0B1BCF6E7100F898DC /* guid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1C917651076000A70CF /* guid.cpp */; };
-		D3F79F0C1BCF6E7100F898DC /* guid.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CA17651076000A70CF /* guid.h */; };
 		D3F79F0D1BCF6E7100F898DC /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CB17651076000A70CF /* md5.cpp */; };
-		D3F79F0E1BCF6E7100F898DC /* md5.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CC17651076000A70CF /* md5.h */; };
 		D3F79F0F1BCF6E7100F898DC /* MemBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CD17651076000A70CF /* MemBuffer.cpp */; };
-		D3F79F101BCF6E7100F898DC /* MemBuffer.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CE17651076000A70CF /* MemBuffer.h */; };
 		D3F79F111BCF6E7100F898DC /* task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1CF17651076000A70CF /* task.cpp */; };
-		D3F79F121BCF6E7100F898DC /* task.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1D017651076000A70CF /* task.h */; };
 		D3F79F131BCF6E7100F898DC /* vfat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1D117651076000A70CF /* vfat.cpp */; };
-		D3F79F141BCF6E7100F898DC /* vfat.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1D217651076000A70CF /* vfat.h */; };
 		D3F79F151BCF6E7100F898DC /* xstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1D317651076000A70CF /* xstring.cpp */; };
-		D3F79F161BCF6E7100F898DC /* xstring.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1D417651076000A70CF /* xstring.h */; };
 		D3F79F171BCF6E7100F898DC /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE225176634C6000A70CF /* tinystr.cpp */; };
-		D3F79F181BCF6E7100F898DC /* tinystr.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE226176634C6000A70CF /* tinystr.h */; };
 		D3F79F191BCF6E7100F898DC /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE227176634C6000A70CF /* tinyxml.cpp */; };
-		D3F79F1A1BCF6E7100F898DC /* tinyxml.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE228176634C6000A70CF /* tinyxml.h */; };
 		D3F79F1B1BCF6E7100F898DC /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE229176634C6000A70CF /* tinyxmlerror.cpp */; };
 		D3F79F1C1BCF6E7100F898DC /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE22A176634C6000A70CF /* tinyxmlparser.cpp */; };
 		D3F79F1D1BCF6E7100F898DC /* cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE205176634AF000A70CF /* cache.cpp */; };
-		D3F79F1E1BCF6E7100F898DC /* cache.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE206176634AF000A70CF /* cache.h */; };
 		D3F79F1F1BCF6E7100F898DC /* directory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE207176634AF000A70CF /* directory.cpp */; };
-		D3F79F201BCF6E7100F898DC /* directory.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE208176634AF000A70CF /* directory.h */; };
 		D3F79F211BCF6E7100F898DC /* disc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE209176634AF000A70CF /* disc.cpp */; };
-		D3F79F221BCF6E7100F898DC /* disc.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20A176634AF000A70CF /* disc.h */; };
 		D3F79F231BCF6E7100F898DC /* fatdir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20B176634AF000A70CF /* fatdir.cpp */; };
-		D3F79F241BCF6E7100F898DC /* fatdir.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20C176634AF000A70CF /* fatdir.h */; };
 		D3F79F251BCF6E7100F898DC /* fatfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20D176634AF000A70CF /* fatfile.cpp */; };
-		D3F79F261BCF6E7100F898DC /* fatfile.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20E176634AF000A70CF /* fatfile.h */; };
 		D3F79F271BCF6E7100F898DC /* file_allocation_table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE20F176634AF000A70CF /* file_allocation_table.cpp */; };
-		D3F79F281BCF6E7100F898DC /* file_allocation_table.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE210176634AF000A70CF /* file_allocation_table.h */; };
 		D3F79F291BCF6E7100F898DC /* filetime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE211176634AF000A70CF /* filetime.cpp */; };
-		D3F79F2A1BCF6E7100F898DC /* filetime.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE212176634AF000A70CF /* filetime.h */; };
 		D3F79F2B1BCF6E7100F898DC /* libfat_public_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE213176634AF000A70CF /* libfat_public_api.cpp */; };
-		D3F79F2C1BCF6E7100F898DC /* libfat_public_api.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE214176634AF000A70CF /* libfat_public_api.h */; };
 		D3F79F2D1BCF6E7100F898DC /* libfat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE215176634AF000A70CF /* libfat.cpp */; };
 		D3F79F2E1BCF6E7100F898DC /* lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE216176634AF000A70CF /* lock.cpp */; };
-		D3F79F2F1BCF6E7100F898DC /* lock.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE217176634AF000A70CF /* lock.h */; };
 		D3F79F301BCF6E7100F898DC /* partition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE218176634AF000A70CF /* partition.cpp */; };
-		D3F79F311BCF6E7100F898DC /* partition.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE219176634AF000A70CF /* partition.h */; };
 		D3F79F321BCF6E7100F898DC /* crc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E11765109C000A70CF /* crc.cpp */; };
-		D3F79F331BCF6E7100F898DC /* crc.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E21765109C000A70CF /* crc.h */; };
 		D3F79F341BCF6E7100F898DC /* decrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E31765109C000A70CF /* decrypt.cpp */; };
-		D3F79F351BCF6E7100F898DC /* decrypt.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E41765109C000A70CF /* decrypt.h */; };
 		D3F79F361BCF6E7100F898DC /* header.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E51765109C000A70CF /* header.cpp */; };
-		D3F79F371BCF6E7100F898DC /* header.h in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE1E61765109C000A70CF /* header.h */; };
-		D3F79F381BCF6E7100F898DC /* math_neon.h in Sources */ = {isa = PBXBuildFile; fileRef = 2838715C17950B2A009B8E84 /* math_neon.h */; };
 		D3F79F391BCF6E7100F898DC /* math_mat4.c in Sources */ = {isa = PBXBuildFile; fileRef = 2838715D17950B69009B8E84 /* math_mat4.c */; };
 		D3F79F3A1BCF6E7100F898DC /* math_sqrtf.c in Sources */ = {isa = PBXBuildFile; fileRef = 2838715E17950B69009B8E84 /* math_sqrtf.c */; };
-		D3F79F3B1BCF6E7100F898DC /* NitrogenEmulatorViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096C17872C320060B347 /* NitrogenEmulatorViewController.h */; };
 		D3F79F3C1BCF6E7100F898DC /* NitrogenEmulatorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096D17872C320060B347 /* NitrogenEmulatorViewController.mm */; };
-		D3F79F3D1BCF6E7100F898DC /* GLProgram.h in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096E17872C320060B347 /* GLProgram.h */; };
 		D3F79F3E1BCF6E7100F898DC /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA096F17872C320060B347 /* GLProgram.m */; };
 		D3F79F3F1BCF6E8400F898DC /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DD2851891E5390075B66C /* GameController.framework */; };
 		D3F79F411BCF6E8400F898DC /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D32C39DA178E749C00E6809E /* libc++.dylib */; };
@@ -1890,119 +1786,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F79E741BCF6E7100F898DC /* emu.cpp in Sources */,
-				D3F79E751BCF6E7100F898DC /* emu.h in Sources */,
-				D3F79E761BCF6E7100F898DC /* nullJit.h in Sources */,
-				D3F79E771BCF6E7100F898DC /* sndcoreaudio.h in Sources */,
 				D3F79E781BCF6E7100F898DC /* sndcoreaudio.mm in Sources */,
 				D3F79E791BCF6E7100F898DC /* throttle.cpp in Sources */,
-				D3F79E7A1BCF6E7100F898DC /* throttle.h in Sources */,
-				D3F79E7B1BCF6E7100F898DC /* NitrogenGame.h in Sources */,
 				D3F79E7C1BCF6E7100F898DC /* NitrogenGame.m in Sources */,
-				D3F79E7D1BCF6E7100F898DC /* asm-32.h in Sources */,
-				D3F79E7E1BCF6E7100F898DC /* asm-64.h in Sources */,
-				D3F79E7F1BCF6E7100F898DC /* asm.h in Sources */,
-				D3F79E801BCF6E7100F898DC /* core-32.h in Sources */,
-				D3F79E811BCF6E7100F898DC /* core-64.h in Sources */,
-				D3F79E821BCF6E7100F898DC /* core.h in Sources */,
-				D3F79E831BCF6E7100F898DC /* fp-32.h in Sources */,
-				D3F79E841BCF6E7100F898DC /* fp-64.h in Sources */,
-				D3F79E851BCF6E7100F898DC /* fp-sse.h in Sources */,
-				D3F79E861BCF6E7100F898DC /* fp-x87.h in Sources */,
-				D3F79E871BCF6E7100F898DC /* fp.h in Sources */,
-				D3F79E881BCF6E7100F898DC /* funcs.h in Sources */,
-				D3F79E891BCF6E7100F898DC /* asm.h in Sources */,
-				D3F79E8A1BCF6E7100F898DC /* core.h in Sources */,
-				D3F79E8B1BCF6E7100F898DC /* fp-swf.h in Sources */,
-				D3F79E8C1BCF6E7100F898DC /* fp-vfp.h in Sources */,
-				D3F79E8D1BCF6E7100F898DC /* fp.h in Sources */,
-				D3F79E8E1BCF6E7100F898DC /* funcs.h in Sources */,
-				D3F79E8F1BCF6E7100F898DC /* asm-common.h in Sources */,
-				D3F79E901BCF6E7100F898DC /* config_lightning.h in Sources */,
-				D3F79E911BCF6E7100F898DC /* core-common.h in Sources */,
-				D3F79E921BCF6E7100F898DC /* fp-common.h in Sources */,
-				D3F79E931BCF6E7100F898DC /* funcs-common.h in Sources */,
-				D3F79E941BCF6E7100F898DC /* lightning.h in Sources */,
 				D3F79E951BCF6E7100F898DC /* ArmLJit.cpp in Sources */,
-				D3F79E961BCF6E7100F898DC /* ArmLJit.h in Sources */,
 				D3F79E971BCF6E7100F898DC /* addons.cpp in Sources */,
-				D3F79E981BCF6E7100F898DC /* addons.h in Sources */,
 				D3F79E991BCF6E7100F898DC /* arm_instructions.cpp in Sources */,
-				D3F79E9A1BCF6E7100F898DC /* arm_instructions.h in Sources */,
 				D3F79E9B1BCF6E7100F898DC /* ArmAnalyze.cpp in Sources */,
-				D3F79E9C1BCF6E7100F898DC /* ArmAnalyze.h in Sources */,
 				D3F79E9D1BCF6E7100F898DC /* ArmCJit.cpp in Sources */,
-				D3F79E9E1BCF6E7100F898DC /* ArmCJit.h in Sources */,
 				D3F79E9F1BCF6E7100F898DC /* armcpu.cpp in Sources */,
-				D3F79EA01BCF6E7100F898DC /* armcpu.h in Sources */,
 				D3F79EA11BCF6E7100F898DC /* ArmThreadedInterpreter.cpp in Sources */,
-				D3F79EA21BCF6E7100F898DC /* ArmThreadedInterpreter.h in Sources */,
 				D3F79EA31BCF6E7100F898DC /* bios.cpp in Sources */,
-				D3F79EA41BCF6E7100F898DC /* bios.h in Sources */,
 				D3F79EA51BCF6E7100F898DC /* cheatSystem.cpp in Sources */,
-				D3F79EA61BCF6E7100F898DC /* cheatSystem.h in Sources */,
 				D3F79EA71BCF6E7100F898DC /* common.cpp in Sources */,
-				D3F79EA81BCF6E7100F898DC /* common.h in Sources */,
 				D3F79EA91BCF6E7100F898DC /* cp15.cpp in Sources */,
-				D3F79EAA1BCF6E7100F898DC /* cp15.h in Sources */,
 				D3F79EAB1BCF6E7100F898DC /* CpuBase.cpp in Sources */,
-				D3F79EAC1BCF6E7100F898DC /* CpuBase.h in Sources */,
 				D3F79EAD1BCF6E7100F898DC /* debug.cpp in Sources */,
-				D3F79EAE1BCF6E7100F898DC /* debug.h in Sources */,
 				D3F79EAF1BCF6E7100F898DC /* Disassembler.cpp in Sources */,
-				D3F79EB01BCF6E7100F898DC /* Disassembler.h in Sources */,
 				D3F79EB11BCF6E7100F898DC /* driver.cpp in Sources */,
-				D3F79EB21BCF6E7100F898DC /* driver.h in Sources */,
 				D3F79EB31BCF6E7100F898DC /* emufile.cpp in Sources */,
-				D3F79EB41BCF6E7100F898DC /* emufile.h in Sources */,
 				D3F79EB51BCF6E7100F898DC /* FIFO.cpp in Sources */,
-				D3F79EB61BCF6E7100F898DC /* FIFO.h in Sources */,
 				D3F79EB71BCF6E7100F898DC /* firmware.cpp in Sources */,
-				D3F79EB81BCF6E7100F898DC /* firmware.h in Sources */,
 				D3F79EB91BCF6E7100F898DC /* fs-linux.cpp in Sources */,
-				D3F79EBA1BCF6E7100F898DC /* fs.h in Sources */,
 				D3F79EBB1BCF6E7100F898DC /* gfx3d.cpp in Sources */,
-				D3F79EBC1BCF6E7100F898DC /* gfx3d.h in Sources */,
 				D3F79EBD1BCF6E7100F898DC /* GPU_osd_stub.cpp in Sources */,
-				D3F79EBE1BCF6E7100F898DC /* GPU_osd.h in Sources */,
 				D3F79EBF1BCF6E7100F898DC /* GPU.cpp in Sources */,
-				D3F79EC01BCF6E7100F898DC /* GPU.h in Sources */,
 				D3F79EC11BCF6E7100F898DC /* JitCommon.cpp in Sources */,
-				D3F79EC21BCF6E7100F898DC /* JitCommon.h in Sources */,
 				D3F79EC31BCF6E7100F898DC /* matrix.cpp in Sources */,
-				D3F79EC41BCF6E7100F898DC /* matrix.h in Sources */,
 				D3F79EC51BCF6E7100F898DC /* mc.cpp in Sources */,
 				D3F79EC61BCF6E7100F898DC /* MMU.cpp in Sources */,
-				D3F79EC71BCF6E7100F898DC /* MMU.h in Sources */,
 				D3F79EC81BCF6E7100F898DC /* movie.cpp in Sources */,
-				D3F79EC91BCF6E7100F898DC /* movie.h in Sources */,
 				D3F79ECA1BCF6E7100F898DC /* NDSSystem.cpp in Sources */,
-				D3F79ECB1BCF6E7100F898DC /* NDSSystem.h in Sources */,
 				D3F79ECC1BCF6E7100F898DC /* path.cpp in Sources */,
-				D3F79ECD1BCF6E7100F898DC /* path.h in Sources */,
 				D3F79ECE1BCF6E7100F898DC /* rasterize.cpp in Sources */,
-				D3F79ECF1BCF6E7100F898DC /* rasterize.h in Sources */,
 				D3F79ED01BCF6E7100F898DC /* readwrite.cpp in Sources */,
-				D3F79ED11BCF6E7100F898DC /* readwrite.h in Sources */,
 				D3F79ED21BCF6E7100F898DC /* render3D.cpp in Sources */,
-				D3F79ED31BCF6E7100F898DC /* render3D.h in Sources */,
 				D3F79ED41BCF6E7100F898DC /* ROMReader.cpp in Sources */,
-				D3F79ED51BCF6E7100F898DC /* ROMReader.h in Sources */,
 				D3F79ED61BCF6E7100F898DC /* rtc.cpp in Sources */,
-				D3F79ED71BCF6E7100F898DC /* rtc.h in Sources */,
 				D3F79ED81BCF6E7100F898DC /* saves.cpp in Sources */,
-				D3F79ED91BCF6E7100F898DC /* saves.h in Sources */,
 				D3F79EDA1BCF6E7100F898DC /* slot1.cpp in Sources */,
-				D3F79EDB1BCF6E7100F898DC /* slot1.h in Sources */,
 				D3F79EDC1BCF6E7100F898DC /* SPU.cpp in Sources */,
-				D3F79EDD1BCF6E7100F898DC /* SPU.h in Sources */,
 				D3F79EDE1BCF6E7100F898DC /* texcache.cpp in Sources */,
-				D3F79EDF1BCF6E7100F898DC /* texcache.h in Sources */,
 				D3F79EE01BCF6E7100F898DC /* thumb_instructions.cpp in Sources */,
-				D3F79EE11BCF6E7100F898DC /* thumb_instructions.h in Sources */,
 				D3F79EE21BCF6E7100F898DC /* version.cpp in Sources */,
-				D3F79EE31BCF6E7100F898DC /* version.h in Sources */,
 				D3F79EE41BCF6E7100F898DC /* wifi.cpp in Sources */,
-				D3F79EE51BCF6E7100F898DC /* wifi.h in Sources */,
 				D3F79EE61BCF6E7100F898DC /* slot1_none.cpp in Sources */,
 				D3F79EE71BCF6E7100F898DC /* slot1_r4.cpp in Sources */,
 				D3F79EE81BCF6E7100F898DC /* slot1_retail_nand.cpp in Sources */,
@@ -2018,79 +1845,44 @@
 				D3F79EF21BCF6E7100F898DC /* 2xsai.cpp in Sources */,
 				D3F79EF31BCF6E7100F898DC /* bilinear.cpp in Sources */,
 				D3F79EF41BCF6E7100F898DC /* epx.cpp in Sources */,
-				D3F79EF51BCF6E7100F898DC /* filter.h in Sources */,
 				D3F79EF61BCF6E7100F898DC /* hq2x.cpp in Sources */,
-				D3F79EF71BCF6E7100F898DC /* hq2x.h in Sources */,
 				D3F79EF81BCF6E7100F898DC /* hq4x.cpp in Sources */,
-				D3F79EF91BCF6E7100F898DC /* hq4x.h in Sources */,
-				D3F79EFA1BCF6E7100F898DC /* interp.h in Sources */,
 				D3F79EFB1BCF6E7100F898DC /* lq2x.cpp in Sources */,
-				D3F79EFC1BCF6E7100F898DC /* lq2x.h in Sources */,
 				D3F79EFD1BCF6E7100F898DC /* scanline.cpp in Sources */,
 				D3F79EFE1BCF6E7100F898DC /* metaspu.cpp in Sources */,
-				D3F79EFF1BCF6E7100F898DC /* metaspu.h in Sources */,
 				D3F79F001BCF6E7100F898DC /* SndOut.cpp in Sources */,
-				D3F79F011BCF6E7100F898DC /* SndOut.h in Sources */,
 				D3F79F021BCF6E7100F898DC /* ConvertUTF.c in Sources */,
-				D3F79F031BCF6E7100F898DC /* ConvertUTF.h in Sources */,
 				D3F79F041BCF6E7100F898DC /* datetime.cpp in Sources */,
-				D3F79F051BCF6E7100F898DC /* datetime.h in Sources */,
 				D3F79F061BCF6E7100F898DC /* dlditool.cpp in Sources */,
 				D3F79F071BCF6E7100F898DC /* emufat.cpp in Sources */,
-				D3F79F081BCF6E7100F898DC /* emufat.h in Sources */,
 				D3F79F091BCF6E7100F898DC /* FileMap.cpp in Sources */,
-				D3F79F0A1BCF6E7100F898DC /* FileMap.h in Sources */,
 				D3F79F0B1BCF6E7100F898DC /* guid.cpp in Sources */,
-				D3F79F0C1BCF6E7100F898DC /* guid.h in Sources */,
 				D3F79F0D1BCF6E7100F898DC /* md5.cpp in Sources */,
-				D3F79F0E1BCF6E7100F898DC /* md5.h in Sources */,
 				D3F79F0F1BCF6E7100F898DC /* MemBuffer.cpp in Sources */,
-				D3F79F101BCF6E7100F898DC /* MemBuffer.h in Sources */,
 				D3F79F111BCF6E7100F898DC /* task.cpp in Sources */,
-				D3F79F121BCF6E7100F898DC /* task.h in Sources */,
 				D3F79F131BCF6E7100F898DC /* vfat.cpp in Sources */,
-				D3F79F141BCF6E7100F898DC /* vfat.h in Sources */,
 				D3F79F151BCF6E7100F898DC /* xstring.cpp in Sources */,
-				D3F79F161BCF6E7100F898DC /* xstring.h in Sources */,
 				D3F79F171BCF6E7100F898DC /* tinystr.cpp in Sources */,
-				D3F79F181BCF6E7100F898DC /* tinystr.h in Sources */,
 				D3F79F191BCF6E7100F898DC /* tinyxml.cpp in Sources */,
-				D3F79F1A1BCF6E7100F898DC /* tinyxml.h in Sources */,
 				D3F79F1B1BCF6E7100F898DC /* tinyxmlerror.cpp in Sources */,
 				D3F79F1C1BCF6E7100F898DC /* tinyxmlparser.cpp in Sources */,
 				D3F79F1D1BCF6E7100F898DC /* cache.cpp in Sources */,
-				D3F79F1E1BCF6E7100F898DC /* cache.h in Sources */,
 				D3F79F1F1BCF6E7100F898DC /* directory.cpp in Sources */,
-				D3F79F201BCF6E7100F898DC /* directory.h in Sources */,
 				D3F79F211BCF6E7100F898DC /* disc.cpp in Sources */,
-				D3F79F221BCF6E7100F898DC /* disc.h in Sources */,
 				D3F79F231BCF6E7100F898DC /* fatdir.cpp in Sources */,
-				D3F79F241BCF6E7100F898DC /* fatdir.h in Sources */,
 				D3F79F251BCF6E7100F898DC /* fatfile.cpp in Sources */,
-				D3F79F261BCF6E7100F898DC /* fatfile.h in Sources */,
 				D3F79F271BCF6E7100F898DC /* file_allocation_table.cpp in Sources */,
-				D3F79F281BCF6E7100F898DC /* file_allocation_table.h in Sources */,
 				D3F79F291BCF6E7100F898DC /* filetime.cpp in Sources */,
-				D3F79F2A1BCF6E7100F898DC /* filetime.h in Sources */,
 				D3F79F2B1BCF6E7100F898DC /* libfat_public_api.cpp in Sources */,
-				D3F79F2C1BCF6E7100F898DC /* libfat_public_api.h in Sources */,
 				D3F79F2D1BCF6E7100F898DC /* libfat.cpp in Sources */,
 				D3F79F2E1BCF6E7100F898DC /* lock.cpp in Sources */,
-				D3F79F2F1BCF6E7100F898DC /* lock.h in Sources */,
 				D3F79F301BCF6E7100F898DC /* partition.cpp in Sources */,
-				D3F79F311BCF6E7100F898DC /* partition.h in Sources */,
 				D3F79F321BCF6E7100F898DC /* crc.cpp in Sources */,
-				D3F79F331BCF6E7100F898DC /* crc.h in Sources */,
 				D3F79F341BCF6E7100F898DC /* decrypt.cpp in Sources */,
-				D3F79F351BCF6E7100F898DC /* decrypt.h in Sources */,
 				D3F79F361BCF6E7100F898DC /* header.cpp in Sources */,
-				D3F79F371BCF6E7100F898DC /* header.h in Sources */,
-				D3F79F381BCF6E7100F898DC /* math_neon.h in Sources */,
 				D3F79F391BCF6E7100F898DC /* math_mat4.c in Sources */,
 				D3F79F3A1BCF6E7100F898DC /* math_sqrtf.c in Sources */,
-				D3F79F3B1BCF6E7100F898DC /* NitrogenEmulatorViewController.h in Sources */,
 				D3F79F3C1BCF6E7100F898DC /* NitrogenEmulatorViewController.mm in Sources */,
-				D3F79F3D1BCF6E7100F898DC /* GLProgram.h in Sources */,
 				D3F79F3E1BCF6E7100F898DC /* GLProgram.m in Sources */,
 				D3F79E6A1BCF6D5000F898DC /* RomsViewController.m in Sources */,
 				D3F79E671BCF6D5000F898DC /* AppDelegate.m in Sources */,
@@ -2259,9 +2051,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nitrogen/support/Nitrogen-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/Classes",
-					"$(SRCROOT)/desmume/src",
-					"$(SRCROOT)/desmume/src/android",
+					"$(SRCROOT)/Classes/**",
+					"$(SRCROOT)/desmume/src/**",
+					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Nitrogen/support/Nitrogen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -2294,9 +2086,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nitrogen/support/Nitrogen-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/Classes",
-					"$(SRCROOT)/desmume/src",
-					"$(SRCROOT)/desmume/src/android",
+					"$(SRCROOT)/Classes/**",
+					"$(SRCROOT)/desmume/src/**",
+					"$(SRCROOT)/**",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Nitrogen/support/Nitrogen-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
