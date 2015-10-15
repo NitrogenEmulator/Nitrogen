@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NitrogenGame.h"
 
-@interface NitrogenEmulatorViewController : UIViewController <UIAlertViewDelegate>
+@interface NitrogenEmulatorViewController : UIViewController //<UIAlertViewDelegate>
 
 @property (strong, nonatomic) NitrogenGame *game;
 @property (copy, nonatomic) NSString *saveState;

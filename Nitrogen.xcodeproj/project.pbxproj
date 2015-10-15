@@ -230,7 +230,6 @@
 		D3F79E971BCF6E7100F898DC /* addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13017650FB0000A70CF /* addons.cpp */; };
 		D3F79E991BCF6E7100F898DC /* arm_instructions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13217650FB0000A70CF /* arm_instructions.cpp */; };
 		D3F79E9B1BCF6E7100F898DC /* ArmAnalyze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13417650FB0000A70CF /* ArmAnalyze.cpp */; };
-		D3F79E9D1BCF6E7100F898DC /* ArmCJit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13617650FB0000A70CF /* ArmCJit.cpp */; };
 		D3F79E9F1BCF6E7100F898DC /* armcpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13817650FB0000A70CF /* armcpu.cpp */; };
 		D3F79EA11BCF6E7100F898DC /* ArmThreadedInterpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13A17650FB0000A70CF /* ArmThreadedInterpreter.cpp */; };
 		D3F79EA31BCF6E7100F898DC /* bios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCFE13C17650FB0000A70CF /* bios.cpp */; };
@@ -334,6 +333,11 @@
 		D3F79F4B1BCF6E8400F898DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCFE0F21764FBD3000A70CF /* UIKit.framework */; };
 		D3F79F4C1BCF6E8400F898DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCFE0F41764FBD3000A70CF /* Foundation.framework */; };
 		D3F79F4D1BCF6E8400F898DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCFE0F61764FBD3000A70CF /* CoreGraphics.framework */; };
+		D3F79F4E1BD01D0400F898DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F79E631BCF6D5000F898DC /* main.m */; };
+		D3F79F4F1BD01D3600F898DC /* NitrogenMFIControllerSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = C345B67118906BB40065A795 /* NitrogenMFIControllerSupport.mm */; };
+		D3F79F501BD0228A00F898DC /* UIScreen+Widescreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA097917872C4B0060B347 /* UIScreen+Widescreen.m */; };
+		D3F79F581BD0249F00F898DC /* NitrogenEmulatorTVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F79F571BD0249F00F898DC /* NitrogenEmulatorTVViewController.m */; };
+		D3F79F5A1BD02B8100F898DC /* demo.nds in Resources */ = {isa = PBXBuildFile; fileRef = D3F79F591BD02B8100F898DC /* demo.nds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -713,6 +717,9 @@
 		D3F79E6C1BCF6D5000F898DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3F79E6E1BCF6D5000F898DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3F79E701BCF6D5000F898DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3F79F561BD0249F00F898DC /* NitrogenEmulatorTVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NitrogenEmulatorTVViewController.h; sourceTree = "<group>"; };
+		D3F79F571BD0249F00F898DC /* NitrogenEmulatorTVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NitrogenEmulatorTVViewController.m; sourceTree = "<group>"; };
+		D3F79F591BD02B8100F898DC /* demo.nds */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.nds; sourceTree = SOURCE_ROOT; };
 		EE9CCDC6190BDBFB000875C4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1438,8 +1445,11 @@
 		D3F79E611BCF6D5000F898DC /* NitrogenTV */ = {
 			isa = PBXGroup;
 			children = (
+				D3F79F591BD02B8100F898DC /* demo.nds */,
 				D3F79E651BCF6D5000F898DC /* AppDelegate.h */,
 				D3F79E661BCF6D5000F898DC /* AppDelegate.m */,
+				D3F79F561BD0249F00F898DC /* NitrogenEmulatorTVViewController.h */,
+				D3F79F571BD0249F00F898DC /* NitrogenEmulatorTVViewController.m */,
 				D3F79E681BCF6D5000F898DC /* RomsViewController.h */,
 				D3F79E691BCF6D5000F898DC /* RomsViewController.m */,
 				D3F79E6B1BCF6D5000F898DC /* Main.storyboard */,
@@ -1616,6 +1626,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F79F5A1BD02B8100F898DC /* demo.nds in Resources */,
 				D3F79E6F1BCF6D5000F898DC /* Assets.xcassets in Resources */,
 				D3F79E6D1BCF6D5000F898DC /* Main.storyboard in Resources */,
 			);
@@ -1786,6 +1797,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F79E741BCF6E7100F898DC /* emu.cpp in Sources */,
+				D3F79F581BD0249F00F898DC /* NitrogenEmulatorTVViewController.m in Sources */,
 				D3F79E781BCF6E7100F898DC /* sndcoreaudio.mm in Sources */,
 				D3F79E791BCF6E7100F898DC /* throttle.cpp in Sources */,
 				D3F79E7C1BCF6E7100F898DC /* NitrogenGame.m in Sources */,
@@ -1793,7 +1805,6 @@
 				D3F79E971BCF6E7100F898DC /* addons.cpp in Sources */,
 				D3F79E991BCF6E7100F898DC /* arm_instructions.cpp in Sources */,
 				D3F79E9B1BCF6E7100F898DC /* ArmAnalyze.cpp in Sources */,
-				D3F79E9D1BCF6E7100F898DC /* ArmCJit.cpp in Sources */,
 				D3F79E9F1BCF6E7100F898DC /* armcpu.cpp in Sources */,
 				D3F79EA11BCF6E7100F898DC /* ArmThreadedInterpreter.cpp in Sources */,
 				D3F79EA31BCF6E7100F898DC /* bios.cpp in Sources */,
@@ -1840,12 +1851,15 @@
 				D3F79EED1BCF6E7100F898DC /* slot2_mpcf.cpp in Sources */,
 				D3F79EEE1BCF6E7100F898DC /* slot2_none.cpp in Sources */,
 				D3F79EEF1BCF6E7100F898DC /* slot2_paddle.cpp in Sources */,
+				D3F79F4E1BD01D0400F898DC /* main.m in Sources */,
 				D3F79EF01BCF6E7100F898DC /* slot2_piano.cpp in Sources */,
+				D3F79F4F1BD01D3600F898DC /* NitrogenMFIControllerSupport.mm in Sources */,
 				D3F79EF11BCF6E7100F898DC /* slot2_rumblepak.cpp in Sources */,
 				D3F79EF21BCF6E7100F898DC /* 2xsai.cpp in Sources */,
 				D3F79EF31BCF6E7100F898DC /* bilinear.cpp in Sources */,
 				D3F79EF41BCF6E7100F898DC /* epx.cpp in Sources */,
 				D3F79EF61BCF6E7100F898DC /* hq2x.cpp in Sources */,
+				D3F79F501BD0228A00F898DC /* UIScreen+Widescreen.m in Sources */,
 				D3F79EF81BCF6E7100F898DC /* hq4x.cpp in Sources */,
 				D3F79EFB1BCF6E7100F898DC /* lq2x.cpp in Sources */,
 				D3F79EFD1BCF6E7100F898DC /* scanline.cpp in Sources */,
@@ -2105,9 +2119,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shao Hung Tung (A9BV2ATGC3)";
@@ -2118,11 +2132,12 @@
 					"$(PROJECT_DIR)/Nitrogen/dropbox",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Nitrogen/support/Nitrogen-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NitrogenTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2141,9 +2156,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shao Hung Tung (J485RK67Z4)";
@@ -2155,7 +2170,8 @@
 					"$(PROJECT_DIR)/Nitrogen/dropbox",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_PREFIX_HEADER = "Nitrogen/support/Nitrogen-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NitrogenTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

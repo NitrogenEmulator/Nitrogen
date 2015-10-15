@@ -595,7 +595,9 @@ FOUNDATION_EXTERN void AudioServicesPlaySystemSoundWithVibration(unsigned long, 
 
 - (IBAction)hideEmulator:(id)sender
 {
+#if !defined(TARGET_OS_TV)
     [self dismissModalViewControllerAnimated:YES];
+#endif
 }
 
 - (IBAction)doSaveState:(UILongPressGestureRecognizer*)sender

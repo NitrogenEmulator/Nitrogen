@@ -11,7 +11,11 @@
 @implementation UIScreen (Widescreen)
 
 - (BOOL)isWidescreen {
-    return [self bounds].size.height == 568;
+#if defined(TARGET_OS_TV)
+    return YES;
+#else
+    return [self bounds].size.height >= 568;
+#endif
 }
 
 @end
