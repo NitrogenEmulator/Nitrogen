@@ -122,8 +122,9 @@ const float textureVert[] =
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+#ifndef TARGET_OS_IOS
     self.view.multipleTouchEnabled = YES;
+#endif
     
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     [notificationCenter addObserver:self selector:@selector(pauseEmulation) name:UIApplicationWillResignActiveNotification object:nil];
@@ -141,14 +142,18 @@ const float textureVert[] =
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+#ifndef TARGET_OS_IOS
     [UIApplication sharedApplication].statusBarHidden = YES;
+#endif
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self pauseEmulation];
     [self saveStateWithName:nil];
+#ifndef TARGET_OS_IOS
     [UIApplication sharedApplication].statusBarHidden = NO;
+#endif
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -275,6 +280,7 @@ const float textureVert[] =
 #pragma mark - Playing ROM
 
 - (void)loadROM {
+    NSLog(@"LOADING: %s", [[self.game.path stringByDeletingLastPathComponent] fileSystemRepresentation]);
     EMU_setWorkingDir([[self.game.path stringByDeletingLastPathComponent] fileSystemRepresentation]);
     EMU_init([NitrogenGame preferredLanguage]);
     EMU_setCPUMode([[NSUserDefaults standardUserDefaults] boolForKey:@"enableLightningJIT"] ? 2 : 1);
@@ -595,12 +601,16 @@ FOUNDATION_EXTERN void AudioServicesPlaySystemSoundWithVibration(unsigned long, 
 - (IBAction)doSaveState:(UILongPressGestureRecognizer*)sender
 {
     if (![sender isKindOfClass:[UILongPressGestureRecognizer class]] || sender.state != UIGestureRecognizerStateBegan) return;
+#ifndef TARGET_OS_IOS
     UIAlertView *saveAlert = [[UIAlertView alloc] initWithTitle:@"Save State" message:@"Name for save state:" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Save", nil];
     saveAlert.alertViewStyle = UIAlertViewStylePlainTextInput;
     [saveAlert show];
+#endif
 }
 
 #pragma mark Alert View Delegate
+
+#ifndef TARGET_OS_IOS
 
 - (void)willPresentAlertView:(UIAlertView *)alertView
 {
@@ -619,6 +629,7 @@ FOUNDATION_EXTERN void AudioServicesPlaySystemSoundWithVibration(unsigned long, 
         [self dismissModalViewControllerAnimated:YES];
     }
 }
+#endif
 
 - (void)viewDidUnload {
     [super viewDidUnload];

@@ -18,14 +18,14 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
-#include <jni.h>
-#include <android/log.h>
+//#include <jni.h>
+//#include <android/log.h>
 
-unsigned int GetPrivateProfileInt(JNIEnv* env, const char* lpAppName, const char* lpKeyName, int nDefault, const char* lpFileName);
+//unsigned int GetPrivateProfileInt(JNIEnv* env, const char* lpAppName, const char* lpKeyName, int nDefault, const char* lpFileName);
 unsigned int GetTickCount();
 
 #ifdef __cplusplus
-bool GetPrivateProfileBool(JNIEnv* env, const char* lpAppName, const char* lpKeyName, bool bDefault, const char* lpFileName);
+//bool GetPrivateProfileBool(JNIEnv* env, const char* lpAppName, const char* lpKeyName, bool bDefault, const char* lpFileName);
 
 extern "C" {
 #endif

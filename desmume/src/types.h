@@ -230,7 +230,7 @@ typedef s16 v10;
 /*----------------------*/
 
 #ifndef OBJ_C
-typedef int BOOL;
+typedef bool BOOL;
 #else
 //apple also defines BOOL
 typedef int desmume_BOOL;

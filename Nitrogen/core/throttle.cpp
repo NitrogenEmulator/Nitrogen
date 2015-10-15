@@ -27,6 +27,9 @@
 #endif
 #include "throttle.h"
 #include "GPU_osd.h"
+#ifndef TARGET_OS_TV
+#include <mach/mach_time.h>
+#endif
 
 int FastForward=0;
 static u64 tmethod,tfreq,afsfreq;
@@ -78,7 +81,15 @@ unsigned long long RawGetTickPerSecond()
 #else
 unsigned long long RawGetTickCount()
 {
-#ifdef IOS
+    static mach_timebase_info_data_t timebase;
+    uint64_t now = mach_absolute_time ();
+    if (timebase.denom == 0) {
+        mach_timebase_info (&timebase);
+        timebase.denom *= 100; /* we return 100ns ticks */
+    }
+    return now * timebase.numer / timebase.denom;
+    
+#ifdef TARGET_OS_IOS
     static mach_timebase_info_data_t timebase;
     uint64_t now = mach_absolute_time ();
     if (timebase.denom == 0) {
@@ -87,9 +98,9 @@ unsigned long long RawGetTickCount()
     }
     return now * timebase.numer / timebase.denom;
 #else
-	timespec timer;
+	/*timespec timer;
 	clock_gettime(CLOCK_MONOTONIC, &timer);
-	return ((unsigned long long)timer.tv_sec * 1000000000ULL) + timer.tv_nsec;
+	return ((unsigned long long)timer.tv_sec * 1000000000ULL) + timer.tv_nsec;*/
 #endif
 }
 

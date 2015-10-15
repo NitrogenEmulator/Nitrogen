@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Nitrogen. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "NitrogenGame.h"
 
 NSString * const NitrogenGameSaveStatesChangedNotification = @"NitrogenGameSaveStatesChangedNotification";
