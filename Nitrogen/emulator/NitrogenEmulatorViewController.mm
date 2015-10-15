@@ -137,8 +137,6 @@ const float textureVert[] =
     if ([[GCController controllers] count] > 0) {
         [self controllerActivated:nil];
     }
-    
-    [self defaultsChanged:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -157,6 +155,7 @@ const float textureVert[] =
 {
     [super viewDidAppear:animated];
     [self loadROM];
+    [self defaultsChanged:nil];
 }
 
 - (void)didReceiveMemoryWarning
