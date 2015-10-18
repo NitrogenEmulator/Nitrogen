@@ -10,4 +10,6 @@
 
 @interface NitrogenEmulatorTVViewController : NitrogenEmulatorViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *frameLabel;
+
 @end

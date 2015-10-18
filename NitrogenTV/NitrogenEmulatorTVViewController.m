@@ -18,8 +18,17 @@
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"nds"];
     self.game = [[NitrogenGame alloc] initWithPath:path saveStateDirectoryPath:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFPS:) name:@"fps" object:nil];
     
     // Do any additional setup after loading the view.
+}
+
+- (void)updateFPS:(NSNotification *)notification
+{
+    self.frameLabel.frame = CGRectMake(0, 0, 200, 50);
+    
+    NSNumber *fps = notification.userInfo[@"fps"];
+    self.frameLabel.text = [NSString stringWithFormat:@"%i FPS", fps.intValue];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,14 +39,5 @@
 - (void)play:(id)sender {
     
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -99,6 +99,8 @@ const float textureVert[] =
 @property (weak, nonatomic) IBOutlet UIButton *selectButton;
 @property (strong, nonatomic) UIImageView *snapshotView;
 
+@property (strong, nonatomic) GCController *controller;
+
 - (IBAction)hideEmulator:(id)sender;
 - (IBAction)onButtonUp:(UIControl*)sender;
 - (IBAction)onButtonDown:(UIControl*)sender;
@@ -190,7 +192,7 @@ const float textureVert[] =
     // EMU_setCPUMode([defaults boolForKey:@"enableLightningJIT"] ? 2 : 1);
     
     
-    self.fpsLabel.hidden = ![defaults integerForKey:@"showFPS"];
+    self.fpsLabel.hidden = NO;//![defaults integerForKey:@"showFPS"];
     self.pixelGrid.hidden = ![defaults integerForKey:@"showPixelGrid"];
 }
 
@@ -456,6 +458,7 @@ const float textureVert[] =
     if (texHandle[0] == 0) return;
     dispatch_async(dispatch_get_main_queue(), ^{
         self.fpsLabel.text = [NSString stringWithFormat:@"%d FPS",fps];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"fps" object:nil userInfo:@{@"fps" : [NSNumber numberWithInt:fps]}];
     });
     
     GLubyte *screenBuffer = (GLubyte*)EMU_getVideoBuffer(NULL);
@@ -482,10 +485,81 @@ const float textureVert[] =
 }
 
 #pragma mark - Controls
-
 - (void)controllerActivated:(NSNotification *)notification {
     if (_controllerContainerView.superview) {
         [_controllerContainerView removeFromSuperview];
+    }
+    GCController *controller = [notification object];
+    GCControllerDirectionPad *pad;
+    NSLog(@"Controller connected: %@", [controller vendorName]);
+    if ([controller microGamepad])
+    {
+        [[controller microGamepad] setAllowsRotation:YES];
+        [[controller microGamepad] setReportsAbsoluteDpadValues:YES];
+        
+        pad = [[controller microGamepad] dpad];
+        
+        // options are so limited here, mapping is so arbitrary. Most games need a start button, so just use A and Start? (Start is mapped to Left trigger for most pads) :/
+        // Siri-Remote != game controller. (Sorry Apple, but it's the truth and the sooner you realise it the sooner we can get on with our lives.)
+        
+        [[[controller microGamepad] buttonA] setPressedChangedHandler:^(GCControllerButtonInput *button, float value, BOOL pressed){
+            if (pressed)
+            {
+                EMU_setABXY(0, 1, 0, 0);
+            }
+            else
+            {
+                EMU_setABXY(0, 1, 0, 0);
+            }
+        }];
+        [[[controller microGamepad] buttonX] setPressedChangedHandler:^(GCControllerButtonInput *button, float value, BOOL pressed){
+            if (pressed)
+            {
+                EMU_setABXY(1, 0, 0, 0);
+            }
+            else
+            {
+                EMU_setABXY(0, 0, 0, 0);
+            }
+        }];
+        GCControllerDirectionPadValueChangedHandler dPadHandler = ^(GCControllerDirectionPad *dpad, float xValue, float yValue) {
+            
+            float xAxis = [[dpad xAxis] value];
+            float yAxis = [[dpad yAxis] value];
+            if (xAxis > 0.5 || xAxis < -0.5)
+            {
+                if (xAxis > 0.5)
+                {
+                    EMU_setDPad(0, 0, 0, NitrogenDirectionalControlDirectionRight);
+                }
+                else if (xAxis < -0.5)
+                {
+                    EMU_setDPad(0, 0, NitrogenDirectionalControlDirectionLeft, 0);
+                }
+            }
+            else
+            {
+                EMU_setDPad(0, 0, 0, 0);
+            }
+            
+            if (yAxis > 0.5 || yAxis < -0.5)
+            {
+                if (yAxis > 0.5)
+                {
+                    EMU_setDPad(NitrogenDirectionalControlDirectionUp, 0, 0, 0);
+                }
+                else if (yAxis < -0.5)
+                {
+                    EMU_setDPad(0, NitrogenDirectionalControlDirectionDown, 0, 0);
+                }
+            }
+            else
+            {
+                EMU_setDPad(0, 0, 0, 0);
+            }
+        };
+        
+        [pad setValueChangedHandler:dPadHandler];
     }
 }
 

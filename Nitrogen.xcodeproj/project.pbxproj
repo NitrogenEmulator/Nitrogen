@@ -218,8 +218,8 @@
 		D3B8BB961794ACEF0061D1D8 /* ZAActivityBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3B8BB931794ACEF0061D1D8 /* ZAActivityBar.bundle */; };
 		D3B8BB971794ACEF0061D1D8 /* ZAActivityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8BB951794ACEF0061D1D8 /* ZAActivityBar.m */; };
 		D3B8BB9A1794ACFE0061D1D8 /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8BB991794ACFE0061D1D8 /* SKBounceAnimation.m */; };
+		D3F57CAD1BD3716700CE8F61 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F57CAC1BD3716700CE8F61 /* GameController.framework */; };
 		D3F79E671BCF6D5000F898DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F79E661BCF6D5000F898DC /* AppDelegate.m */; };
-		D3F79E6A1BCF6D5000F898DC /* RomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F79E691BCF6D5000F898DC /* RomsViewController.m */; };
 		D3F79E6D1BCF6D5000F898DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F79E6B1BCF6D5000F898DC /* Main.storyboard */; };
 		D3F79E6F1BCF6D5000F898DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F79E6E1BCF6D5000F898DC /* Assets.xcassets */; };
 		D3F79E741BCF6E7100F898DC /* emu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098117872CF40060B347 /* emu.cpp */; };
@@ -708,12 +708,11 @@
 		D3B8BB951794ACEF0061D1D8 /* ZAActivityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZAActivityBar.m; path = Nitrogen/ZAActivityBar/ZAActivityBar.m; sourceTree = SOURCE_ROOT; };
 		D3B8BB981794ACFE0061D1D8 /* SKBounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKBounceAnimation.h; path = Nitrogen/ZAActivityBar/SKBounceAnimation/SKBounceAnimation.h; sourceTree = SOURCE_ROOT; };
 		D3B8BB991794ACFE0061D1D8 /* SKBounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKBounceAnimation.m; path = Nitrogen/ZAActivityBar/SKBounceAnimation/SKBounceAnimation.m; sourceTree = SOURCE_ROOT; };
+		D3F57CAC1BD3716700CE8F61 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
 		D3F79E601BCF6D5000F898DC /* NitrogenTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NitrogenTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F79E631BCF6D5000F898DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3F79E651BCF6D5000F898DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3F79E661BCF6D5000F898DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D3F79E681BCF6D5000F898DC /* RomsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RomsViewController.h; sourceTree = "<group>"; };
-		D3F79E691BCF6D5000F898DC /* RomsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomsViewController.m; sourceTree = "<group>"; };
 		D3F79E6C1BCF6D5000F898DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3F79E6E1BCF6D5000F898DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3F79E701BCF6D5000F898DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -750,6 +749,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F57CAD1BD3716700CE8F61 /* GameController.framework in Frameworks */,
 				D3F79F3F1BCF6E8400F898DC /* GameController.framework in Frameworks */,
 				D3F79F411BCF6E8400F898DC /* libc++.dylib in Frameworks */,
 				D3F79F421BCF6E8400F898DC /* QuartzCore.framework in Frameworks */,
@@ -1070,6 +1070,7 @@
 		BFCFE0F11764FBD3000A70CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3F57CAC1BD3716700CE8F61 /* GameController.framework */,
 				9C4DD2851891E5390075B66C /* GameController.framework */,
 				D3B8BB911794ACCE0061D1D8 /* DropboxSDK.framework */,
 				D32C39DA178E749C00E6809E /* libc++.dylib */,
@@ -1450,8 +1451,6 @@
 				D3F79E661BCF6D5000F898DC /* AppDelegate.m */,
 				D3F79F561BD0249F00F898DC /* NitrogenEmulatorTVViewController.h */,
 				D3F79F571BD0249F00F898DC /* NitrogenEmulatorTVViewController.m */,
-				D3F79E681BCF6D5000F898DC /* RomsViewController.h */,
-				D3F79E691BCF6D5000F898DC /* RomsViewController.m */,
 				D3F79E6B1BCF6D5000F898DC /* Main.storyboard */,
 				D3F79E6E1BCF6D5000F898DC /* Assets.xcassets */,
 				D3F79E701BCF6D5000F898DC /* Info.plist */,
@@ -1898,7 +1897,6 @@
 				D3F79F3A1BCF6E7100F898DC /* math_sqrtf.c in Sources */,
 				D3F79F3C1BCF6E7100F898DC /* NitrogenEmulatorViewController.mm in Sources */,
 				D3F79F3E1BCF6E7100F898DC /* GLProgram.m in Sources */,
-				D3F79E6A1BCF6D5000F898DC /* RomsViewController.m in Sources */,
 				D3F79E671BCF6D5000F898DC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2213,6 +2211,7 @@
 				D3F79E731BCF6D5000F898DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
